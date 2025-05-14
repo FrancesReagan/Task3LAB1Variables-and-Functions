@@ -5,13 +5,12 @@ function checkEligibility(){
   let isEmployed = document.getElementById("employedCheckbox").checked;
 
   //check the conditions are eligible or not//
-  if (age>18&&isEmployed) {
+  if (age >= 18 && isEmployed) {
     document.getElementById("result").innerHTML ="YOU ARE IN!! congrats on being eligible for the program!";
-  }else if (age>18&&!isEmployed){
-    document.getElementById("result".innerHTML = "You have conditional eligibility for the program."; {
-      else {
+  } else if (age >= 18 && !isEmployed) {
+    document.getElementById("result").innerHTML = "You have conditional eligibility for the program."; 
+  } else {
         document.getElementById("result").innerHTML = "Sorry, you are not eligible for the program.";
       }
     }
-  }
-}
+  
